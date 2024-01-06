@@ -20,7 +20,7 @@ int fibomacci(int n){
 };
 int main ()
 {
-   int ans= fibomacci(2);
+   int ans= fibomacci(1);
    cout<<ans;
    
    return 0;

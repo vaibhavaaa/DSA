@@ -6,7 +6,7 @@ void sortout(int nums[] , int n){
    int i=0;
    int j=n-1;
    while(i<j){
-      while(nums[i]==0&& i<j){
+      while(nums[i]==0 && i<j){
          i++;
       }
       while(nums[j]==1&& i<j){
