@@ -13,7 +13,7 @@ int peakelem(int arr[],int size){
 }
 int main ()
 {
-   int arr[8]={ 1,4,5,6,3,2,1,0};
+   int arr[8]={1,4,5,6,3,2,1,0};
    int size= 8;
    int ans =peakelem(arr, size);
    cout<<ans;
