@@ -1,3 +1,7 @@
+/*
+in array all 0's will be moved to the 
+right without sorting non zero elemnts;
+*/
 #include <iostream>
 using namespace std;
 void movezeroes(int arr[], int n){
