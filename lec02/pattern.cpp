@@ -13,9 +13,11 @@ int main ()
    while(i<=4){
       int j=1;
       while(j<=4){
-         cout<<"*"<<" ";
+         cout<<"J"<<" ";
          j++;
-      }cout<<endl;
+      }
+      cout<<endl;
+
       i++;
    }
    

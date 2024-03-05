@@ -7,8 +7,9 @@ int firtocc(int arr[], int n, int key){
    int s=0;
    int e=n-1;
    int ans=-1;
+   int mid =s+(e-s)/2;
    while(s<=e){
-      int mid =s+(e-s)/2;
+      
       if(arr[mid]==key){
          ans=mid;
          e=mid-1;  
