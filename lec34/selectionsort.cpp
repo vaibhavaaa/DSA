@@ -15,7 +15,7 @@ void selectionsort(int arr[], int size){
       swap(arr[minindex],arr[i]);
    }
    // recursive call
-   selectionsort(arr+1,size-1);
+   // selectionsort(arr+1,size-1);
 }
 int main ()
 {

@@ -5,7 +5,7 @@ left shift / right shift
 using namespace std;
 int main ()
 {
-   cout<<"left shift of 2 by 1: "<< (2<<1)<<endl;
-   cout<<"right shift of 2 by 1: "<<(2>>1);
+   cout<<"left shift of 4 by 1: "<< (4<<1)<<endl;
+   cout<<"right shift of 4 by 1: "<<(4>>1);
    return 0;
 }

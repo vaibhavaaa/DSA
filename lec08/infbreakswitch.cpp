@@ -8,7 +8,7 @@ int main ()
       int ch=1;
       switch(ch){
          case 1:  cout<<"infinity";
-         exit(ch);
+         exit();
       }
    }
    return 0;

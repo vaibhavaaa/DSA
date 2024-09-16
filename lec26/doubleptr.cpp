@@ -2,9 +2,10 @@
 using namespace std;
 int update(int *p){
    // p=p+1;
-   //lets check if something changes; no
+   //lets check if something changes;
    *p = *p +1;
-   //lets check if something changes; 
+   //lets check if something changes;
+   
 
 
 }
@@ -16,13 +17,13 @@ int main ()
 
    cout<<" before "<<endl;
    cout<<i<<endl;
-   cout<<p<<endl;
-   cout<<p2<<endl;
+   cout<<*p<<endl;
+   cout<<**p2<<endl;
    update(p);
    cout<<" after "<<endl;
    cout<<i<<endl;
-   cout<<p<<endl;
-   cout<<p2<<endl;
+   cout<<*p<<endl;
+   cout<<**p2<<endl;
    cout<<sizeof(int)<<endl;
    return 0;
 }

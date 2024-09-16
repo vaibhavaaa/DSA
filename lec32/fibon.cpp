@@ -12,8 +12,8 @@ int fib(int n){
 }
 int main ()
 {
-   int soln = fib(3);
-   cout<<" the 3rd fibo element is "<<soln<<endl;
+   int soln = fib(5);
+   cout<<" the 5rd fibo element is "<<soln<<endl;
    
    return 0;
 }

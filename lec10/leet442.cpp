@@ -24,7 +24,7 @@ public:
 int main ()
 {
    Solution solution;
-   vector<int> numbers = {6,1,4,5,4,6,7,1};
+   vector<int> numbers = {6,1,4,5,4,6,7,1,4};
    vector<int>  ans =solution.findDuplicates(numbers);
    
     // Loop through the vector and print each element

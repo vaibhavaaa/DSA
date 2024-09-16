@@ -6,9 +6,12 @@ int main ()
    char ch[6] ="abcde";
    cout<<ch<<endl;
    
-   int *pr = &arr[0];
-   cout<<pr<<endl;
+   int *pr = arr;
+   cout<<*pr<<endl;
    char *c = &ch[0];
+   char *d =ch;
+   
+   cout<<d<<endl;
    cout<<c<<endl;
    cout<<*c<<endl;
    

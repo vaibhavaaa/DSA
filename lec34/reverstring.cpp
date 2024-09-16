@@ -2,7 +2,7 @@
 using namespace std;
 void reverse( string word, int length){
    // base case;
-   if(length < 0){
+   if(length == 0){
       return;
    }
    char l = word[length-1] ;

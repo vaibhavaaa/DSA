@@ -14,11 +14,13 @@ void saydigits(int num, string array[]){
    // recursive relation
    saydigits(num,array);
     cout<<array[digit]<<" ";
+    
 }
 int main ()
 {
    string array[10]={"zero","one","two","three","four","five","six","seven","eight","nine"};
    saydigits(7657,array);
+   
    
    return 0;
 }

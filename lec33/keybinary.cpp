@@ -22,7 +22,7 @@ bool keybinarysearch(int array[], int s, int e,int key){
 }
 int main ()
 {
-   int arr[5]={2,4,9,7,8};
+   int arr[5]={2,4,7,8,10};
    int size =5;
    int key =8;
    int start =0;

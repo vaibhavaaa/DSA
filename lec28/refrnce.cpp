@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-//bad practise 
+
 int & updaterfn( int n){
    int &ans = n;
    ans++;

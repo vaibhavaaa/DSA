@@ -20,7 +20,7 @@ public:
 int main ()
 {
    Solution solution;
-   int ans= solution.bitwiseComplement(5);
+   int ans= solution.bitwiseComplement(3);
    cout<<ans;
    return 0;
    

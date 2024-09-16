@@ -16,7 +16,11 @@ int main() {
         switch (ch) {
             case 0: {
                 int count = am / 100;
+                if(!count){
+
+                }else{
                 cout << count << " notes of 100" << endl;
+                }
                 am = am % 100;
                 i++;
                 break;

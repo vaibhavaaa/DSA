@@ -14,12 +14,12 @@ vector<vector<int>> pairSum(vector<int> &arr, int s){
          }
       }
    }
-   sort(ans.begin(), ans.end());
+    sort(ans.begin(), ans.end());
    return ans;
 }
 int main ()
 {
-   vector<int> arr1={0,1,2,4,5,8,9};
+   vector<int> arr1={4,1,2,9,5,8,0};
    int sum = 9;
    vector<vector<int>> soln = pairSum(arr1, sum);
    

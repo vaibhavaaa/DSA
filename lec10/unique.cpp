@@ -11,8 +11,8 @@ int findUnique(int *arr, int size)
 }
 int main ()
 {
-   int arr[9] ={1,3,1,3,6,6,7,10,7};
-   int size =9;
+   int arr[7] ={1,3,1,3,6,6,7};
+   int size =7;
    int ans =findUnique(arr,size);
    cout<<"the unique element is "<<ans;
    

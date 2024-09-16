@@ -24,7 +24,7 @@ public:
 int main ()
 {
    Solution solution;
-   vector<int> numbers = {6,1,2,4,5,3,6};
+   vector<int> numbers = {3,3,3,3,3};
    int ans =solution.findDuplicate(numbers);
    cout<<ans;
    

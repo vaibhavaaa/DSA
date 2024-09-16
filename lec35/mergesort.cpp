@@ -1,68 +1,65 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-int merge(int *arr,int s, int e){
-   int mid = (s+e)/2;
-   int len1= mid-s+1;
-   int len2= e-mid;
-   
-   int *first = new int[len1];
-   int *second = new int[len2];
+void merge(int *arr, int s, int e){
+   int mid = s + (e - s) / 2;
+   int l1 = mid-s+1;
+   int l2 = e-mid;
 
-   // copy value;
-   int mi=s;
-   for(int i=0;i<len1;i++){
-      first[i]=arr[mi++];
+   int *first= new int[l1];
+   int *second= new int[l2];
+   
+   int start =s;
+   for(int i=0;i<l1;i++){
+      first[i]=arr[start++];
    }
-   mi =mid+1;
-   for(int i=0;i<len2;i++){
-      second[i]=arr[mi++];
+   for(int i=0;i<l2;i++){
+      second[i]=arr[start++];
    }
-   // merge 
    int index1=0;
-   int index2 =0;
+   int index2=0;
    int mainindex=s;
-   while(index1 < len1 && index2 <len2){
-      if(first[index1]<second[index2]){
+   while(index1<l1 && index2<l2){
+      if(first[index1]<second[index2])
+      {
          arr[mainindex++]=first[index1++];
-      }
-      else{
+      }else{
          arr[mainindex++]=second[index2++];
       }
-      
+
    }
-   while(index1<len1){
+   while(index1<l1){
       arr[mainindex++]=first[index1++];
    }
-    while(index2<len2){
+   while(index2<l2)
+   {
       arr[mainindex++]=second[index2++];
    }
-}
-void mergesort(int *arr, int s, int e){
-   //base case
+   delete[] first;
+   delete[] second;
+
+ }
+
+void mergesort(int *arr, int s, int e)
+{
    if(s>=e){
       return;
    }
-   int mid = (s+e)/2;
-   //left part sort krna hain
-   mergesort(arr, s, mid);
-   //right part
+
+   int mid = s +(e-s)/2;
+   mergesort(arr,s,mid);
    mergesort(arr,mid+1,e);
-   // merge
    merge(arr,s,e);
+
 }
 int main ()
 {
-   int arr[5]= { 1,3, 4, 7,2};
-   int start=0;
-   int end = 4;
-   
-   mergesort(arr,start,end);
-   for (int i = 0; i < 5; i++) {
-    cout << arr[i] << " ";
+   int array[7] = { 1, 8, 3, 4 ,2,9,5};
+   int s=0;
+   int e=6;
+   mergesort(array, s,e);
+   for(int i=0;i<=6;i++){
+      cout<<array[i]<<" ";
+   }
+
 }
 
-   
-   
-   
-   return 0;
-}

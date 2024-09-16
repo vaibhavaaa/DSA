@@ -18,7 +18,7 @@ int main ()
 {
    int arr[5]={2,4,9,7,8};
    int size =5;
-   int key =17;
+   int key =9;
    bool ans = keysearch(arr,size,key);
    if(ans){
       cout<<" the number "<<key<<" is present "<<endl;

@@ -10,7 +10,7 @@ int sum_recursive(int array[],int size){
 }
 int main ()
 {
-   int arr[5]={1};
+   int arr[5]={5,2};
    int size =5;
    int sum = sum_recursive(arr,size); 
    cout<<"the sum of elements is "<<sum<<endl;
